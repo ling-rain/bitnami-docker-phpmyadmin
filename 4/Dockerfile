@@ -8,7 +8,7 @@ RUN bitnami-pkg unpack php-5.6.30-3 --checksum af6c238825d4394fc6352c5ad48c1e642
 RUN bitnami-pkg install libphp-5.6.30-1 --checksum a62cad2320fa2d141309e75663aed3d1bd82626d51b784678d18ec3f985d83bf
 RUN bitnami-pkg unpack phpmyadmin-4.7.0-1 --checksum 64d5643e56167d919c5206f11be00d74311fd1a629aa4f07224f808d2fb47638
 
-COPY rootfs /
+COPY /4/rootfs /
 
 ENV APACHE_HTTPS_PORT="443" \
     APACHE_HTTP_PORT="80" \
